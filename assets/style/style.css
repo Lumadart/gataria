@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color01:#ebc150;
+    --color02:#f78da7;
+    --color03:#77bde6;
+    --color04:#a8c07b;
+    --text-color:#333333;
+    --bg-color1:#f9f9f9;
+    --bg-color2:#d6d6d650;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style-position: inside;
+}
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+    color: var(--text-color);
+    line-height: 1.5em;
+    font-weight: 400;
+    background-color: var(--bg-color1);
+}
+html {
+    scroll-behavior: smooth;
+}
+::selection {
+    background: #fff;
+    color: #888;
+    }
+p {
+    text-indent: 2em;
+    text-align: justify;
+    margin-bottom:1rem;
+}
+h1 {
+    font-size: 3.1em;
+    text-transform: uppercase;
+    color:var(--bg-color1)
+}
+h2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+h3 {
+    font-size: 5em;
+    line-height: .8em;
+    top:0;
+    left:0;
+    position: absolute;
+    opacity: .1;
+}
+h4 {
+    font-size: 1.2em;
+}
+header,h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:.5em;
+    font-weight: 600;
+}
+section {
+    min-height: 60vh;
+    border:1px solid transparent;
+}
+/*--------------------------------------------
+header
+--------------------------------------------*/
+header {
+    background-color: var(--color01);
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:2;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: .4em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: -.1em;
+    cursor:pointer;
+    color: var(--bg-color1);
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap:2em;
+    text-transform: capitalize;
+}
+.menu ul li a {
+    display: inline-block;
+    padding: 1em;
+    color:var(--bg-color1);
+    font-weight: 500;
+    transition: .4s;
+}
+.menu ul li:hover a {
+    opacity: .8;
+}
+/*--------------------------------------------
+hero
+--------------------------------------------*/
+#hero {
+    background:var(--color02) url(../imgs/gato-cinza-parede-rosa_crop.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 3em;
+}
+.hero-content {
+    max-width:1200px;
+    margin:auto;
+    padding:1em;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content p {
+    max-width: 50%;
+    color: var(--bg-color1);
+}
+
+/*--------------------------------------------
+curiosidades
+--------------------------------------------*/
+.curio-content {    
+    background-color:var(--bg-color2);
+    max-width:1200px;
+    min-height:30vh;
+    margin:auto;
+    padding: 3em;
+    border-radius: 10px;
+
+}
+.curio h2 {
+    color: var(--text-color) !important;
+    line-height: 1em;
+
+}
+.curio ul li {
+    padding-bottom: 1em;
+}
+.curio ul li::marker {
+    content: '\f1b0 ';
+    font-size: 1em;
+    font-family: 'FontAwesome';
+    color: var(--color01);
+    letter-spacing: 1em;
+}
+/*--------------------------------------------
+taxonomia
+--------------------------------------------*/
+.taxonomia-content {
+    max-width:1200px;
+    margin:5rem auto;
+    padding:1em;
+}
+.tax-columns {
+    display: flex;
+    gap:4em;
+}
+.img-cat-tax {
+    background-color: var(--bg-color2);
+    width: 400px;
+    height: 465px;
+    margin-top:10px;
+    border-radius: 10px;
+}
+#catimgtax {
+    background-image: url(../imgs/gato-pretoebranco-parede-verde.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tax-title {
+    position: relative;
+}
+#taxonomia h2, #taxonomia h3 {
+    color:var(--color04);
+}
+
+.taxlist{
+    background-color: var(--bg-color2);
+    margin:2em 0;
+    padding:2em;
+    border-radius: 10px;
+}
+
+.taxlist li {
+    padding-bottom: .2em;
+}
+.taxlist li::marker {
+    content: '\f1b0 ';
+    font-size: 1em;
+    font-family: 'FontAwesome';
+    color: var(--color04);
+    letter-spacing: 1em;
+}
+/*--------------------------------------------
+cores
+--------------------------------------------*/
+.cores-content {
+    max-width:1200px;
+    margin:5rem auto 0;
+    padding: 1em;
+}
+.cores-content-title {
+    position: relative;
+}
+#cores h2, #cores h3, #cores h4 {
+    color:var(--color03);
+}
+.cat-color-img {
+    background:var(--bg-color2) url(../imgs/gatos-cores.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 35vh;
+    border-radius: 10px;
+}
+/*--------------------------------------------
+Heterocromia
+--------------------------------------------*/
+.heterocromia-content {
+    max-width:1200px;
+    margin:5rem auto 0;
+    padding: 1em;
+}
+.heterocromia-content-title {
+    position: relative;
+}
+#heterocromia h2,#heterocromia h3, #heterocromia h4 {
+    color:var(--color02);
+}
+.hete-columns {
+    display: flex;
+    gap:2em;
+}
+.img-hete-cat {
+    width: 400px;
+    height: 500px;
+    background: var(--bg-color2) url(../imgs/gato-heterocromia.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+/*--------------------------------------------
+sentidos
+--------------------------------------------*/
+.sentidos-content {
+    max-width:1200px;
+    margin:5rem auto 0;
+    padding: 1em;
+}
+.sentidos-title {
+    position: relative;
+}
+#sentidos h2,#sentidos h3,#sentidos h4 {
+    color:var(--color04);
+}
+.sentidos-columns {
+    display: flex;
+    gap:2em;
+}
+.sentidos-cat-img {
+    width: 400px;
+    height: 500px;
+    background: var(--bg-color2);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+#sentcatimg01 {
+    background-image: url(../imgs/gato-cinza-parede-verde-2.jpg);
+
+}
+#sentcatimg02 {
+    background-image: url(../imgs/gato-cinza-parede-verde-3.jpg);
+}
+/*--------------------------------------------
+estrabismo
+--------------------------------------------*/
+.estrabismo-content {
+    max-width:1200px;
+    margin:auto;
+    padding: 5em 1em 0;
+}
+.estrabismo-content-title {
+    position: relative;
+}
+#estrabismo h2, #estrabismo h3, #estrabismo h4 {
+    color:var(--color01);
+}
+.est-columns {
+    display: flex;
+    gap: 2em;
+}
+.cat-est-img {
+    background:var(--bg-color2) url(../imgs/gato-siames-parede-amarela_V.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.est-columns ul li {
+    padding-bottom: 1em;
+}
+
+.est-columns li::marker {
+    content: '\f1b0 ';
+    font-size: 1em;
+    font-family: 'FontAwesome';
+    color: var(--color01);
+    letter-spacing: 1em;
+}
+/*--------------------------------------------
+footer
+--------------------------------------------*/
+footer {
+    background-color: var(--color03);
+    min-height: 30vh;
+    margin-top:5em;
+}
+.footer-content {
+    max-width:1200px;
+    margin:auto;
+    padding: 2em 1em;
+    color: var(--bg-color1);
+
+}
+.footer-columns {
+    display: flex;
+    gap:5em;
+    padding: 2em 0;
+    margin-top:1em;
+    border-top:1px solid var(--bg-color1)
+}
+.footer-column {
+    width: 100%;
+
+}
+ #column02 {
+    columns: 2;
+}
+.footer-content a,#column02 li a {
+    color: var(--bg-color1);
+}
+.footer-content a:hover, #column02 li:hover a {
+    text-decoration: underline;
+}
+#column02 li::marker {
+    content: '\f1b0 ';
+    font-size: 1em;
+    font-family: 'FontAwesome';
+    color: var(--bg-color1);
+    letter-spacing: 1em;
+}
+.footer-footer {
+    background-color: var(--color01);
+    text-align: center;
+    padding: 1em;
+    font-size: .8em;
+    text-transform: uppercase;
+}
